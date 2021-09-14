@@ -1,12 +1,12 @@
-Name:       risios-logos
+Name:       booplinux-logos
 Version:    18.0.0
 Release:    6%{?dist}
 Summary:    Icons and pictures
 
 Group:      	System Environment/Base
-URL:        	https://github.com/risiOS/risios-logos/
-Source0:    	https://github.com/risiOS/risios-logos/archive/refs/heads/main.tar.xz
-License:    	GPLv2 and LGPLv2+
+URL:        	https://github.com/BoopLabs/booplinux-logos/
+Source0:    	https://github.com/BoopLabs/booplinux-logos/archive/refs/heads/main.tar.xz
+License:    	GPLv2+ and CC-BY-SA 4.0+
 BuildRoot:  	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:  	noarch
 
@@ -25,14 +25,10 @@ BuildRequires: libicns-utils
 Requires(post): coreutils
 
 %description
-The risios-logos package contains various image files which can be
-used by the bootloader, anaconda, and other related tools. It can
-be used as a replacement for the fedora-logos package, if you are
-unable for any reason to abide by the trademark restrictions on the
-fedora-logos or fedora-remix-logos package.
+Boop! Linux Logos and Branding
 
 %package httpd
-Summary: Fedora-related icons and pictures used by httpd
+Summary: Boop-related icons and pictures used by httpd
 Provides: system-logos-httpd = %{version}-%{release}
 Provides: fedora-logos-httpd = %{version}-%{release}
 Obsoletes:  generic-logos < 17.0.0-5
@@ -50,9 +46,9 @@ make
 %install
 rm -rf %{buildroot}
 
-mkdir -p %{buildroot}%{_datadir}/firstboot/themes/risios
+mkdir -p %{buildroot}%{_datadir}/firstboot/themes/booplinux
 for i in firstboot/* ; do
-  install -p -m 644 $i %{buildroot}%{_datadir}/firstboot/themes/risios
+  install -p -m 644 $i %{buildroot}%{_datadir}/firstboot/themes/booplinux
 done
 
 mkdir -p %{buildroot}%{_datadir}/pixmaps/bootloader
