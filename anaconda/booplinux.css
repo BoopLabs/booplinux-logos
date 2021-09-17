@@ -1,4 +1,8 @@
-@define-color risiOS #5f2f65;
+@define-color PrimaryPurple #915CEE;
+@define-color ReallyRed #f65a5a;
+@define-color BitBlue #3a66ff;
+@define-color AnnoyingOrange #ff7b22;
+
 
 /* logo and sidebar classes for Fedora */
 
@@ -8,7 +12,7 @@
  */
 .logo-sidebar {
     background-image: url('/usr/share/anaconda/pixmaps/workstation/sidebar-bg.png');
-    background-color: @risiOS;
+    background-color: @AnnoyingOrange;
     background-repeat: no-repeat;
 }
 
@@ -27,7 +31,7 @@
 }
 
 AnacondaSpokeWindow #nav-box {
-    background-color: @risiOS;
+    background-color: @PrimaryPurple;
     background-image: url('/usr/share/anaconda/pixmaps/workstation/topbar-bg.png');
     background-repeat: no-repeat;
     color: white;
