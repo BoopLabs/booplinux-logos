@@ -5,7 +5,7 @@ Summary:    Icons and pictures
 
 Group:      	System Environment/Base
 URL:        	https://github.com/BoopLabs/booplinux-logos/
-Source0:    	https://github.com/BoopLabs/booplinux-logos/archive/refs/heads/main.tar.xz
+Source0:    	https://github.com/BoopLabs/booplinux-logos.git
 License:    	GPLv2+ and CC-BY-SA 4.0+
 BuildRoot:  	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:  	noarch
