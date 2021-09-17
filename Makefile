@@ -1,4 +1,4 @@
-NAME = risios-logos
+NAME = booplinux-logos
 XML = backgrounds/desktop-backgrounds-fedora.xml
 
 all: bootloader/fedora.icns
