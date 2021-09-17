@@ -1,12 +1,12 @@
 Name:       booplinux-logos
-Version:    18.0.0
+Version:    0.1
 Release:    6%{?dist}
 Summary:    Icons and pictures
 
 Group:      	System Environment/Base
 URL:        	https://github.com/BoopLabs/booplinux-logos/
-Source0:    	https://github.com/BoopLabs/booplinux-logos.git
-License:    	GPLv2+ and CC-BY-SA 4.0+
+Source0:    	https://github.com/BoopLabs/booplinux-logos/archive/refs/tags/alpha.tar.gz
+License:    	GPLv2+
 BuildRoot:  	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:  	noarch
 
@@ -35,7 +35,7 @@ Obsoletes:  generic-logos < 17.0.0-5
 BuildArch: noarch
 
 %description httpd
-The risios-logos-httpd package contains image files which can be used by
+The booplinux-logos-httpd package contains image files which can be used by
 httpd.
 
 %prep
